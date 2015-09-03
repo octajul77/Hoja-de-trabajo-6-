@@ -23,4 +23,4 @@ public class factory<E>{
 			
 		return null;
 	}
-}
+} 
