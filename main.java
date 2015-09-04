@@ -3,7 +3,7 @@ import java.util.Set;
 /*
 Hoja de trabajo No. 6
 Julio Gonzalez 14096
-Andre Hernandez ----
+Andre Hernandez 14395
 */
 
 
@@ -17,7 +17,7 @@ public class main{
 		
 		System.out.println("Bienvenido al clasificador de personal de Desarrollo de Ambiente");
 		/* Aca se trabaja ocn el factory */
-		System.out.println("\n Seleccione la implementaciÃ³n de SET que desea utilizar.");
+		System.out.println("\n Seleccione la implementación de SET que desea utilizar.");
 				for(int i=0; i<implementation.length; i++){
 					System.out.println(+(i+1)+". "+implementation[i]);
 					}
@@ -57,7 +57,7 @@ public class main{
 		// Inciso 1
 		System.out.println("\nDesarrolladores con experiencia en Java, web y celulares.");
 		for(int i=0; i<conjunto.javaAndWebAndCel(op).length; i++){
-			System.out.println(conjunto.javaAndWebAndCel(op)[i]);
+		 	System.out.println(conjunto.javaAndWebAndCel(op)[i]);
 		}
 		// Inciso 2
 		System.out.println("\nDesarrolladores con experiencia en Java pero que no tengan experiencia en web.");
@@ -78,18 +78,14 @@ public class main{
 		System.out.println("\nEl conjunto de desarrolladores java es un subconjunto de desarrolladores web.");
 		System.out.println(conjunto.JavaSubConjunto(op));
 		
-		//Inciso 6
+		//Inciso 6 y 7 
 		System.out.println("\nEl conjunto con la cantidad mas grande de desarrolladores y sus nombres");
-		if (conjunto.MayorConjunto(op) !=null){
-			for(int i=0; i<conjunto.MayorConjunto(op).length; i++){
-				System.out.println(conjunto.MayorConjunto(op)[i]);
+		if (conjunto.MayorConjunto()!=null){
+			for(int i=0; i<conjunto.MayorConjunto().length; i++){
+				System.out.println(conjunto.MayorConjunto()[i]);
 			}
-		
-		}else{
-			System.out.println(" NO Hay mayor conjunto");
 		}
-		
-		
-		
+		else
+			System.out.println("\nNO hay mayor conjunto por lo tanto no hay inciso 6 y 7");		
 	}
-} 
+}

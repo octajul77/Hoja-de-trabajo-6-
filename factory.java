@@ -5,11 +5,8 @@ import java.util.TreeSet;
 /*
 Hoja de trabajo No. 6
 Julio Gonzalez 14096
-Andre Hernandez ----
+Andre Hernandez 14395
 */
-
-
-
 
 public class factory<E>{
 	public Set<E> getSet(int num){
@@ -19,8 +16,6 @@ public class factory<E>{
 			return new HashSet<E>();
 		if(num==3)
 			return new TreeSet<E>();
-				
-			
 		return null;
 	}
 } 
